@@ -1,23 +1,36 @@
 Critical Mach
 -------------
 
-This IDL code can be used to calculate critical Mach numbers for collisionless shocks as described in Kennel et al. 1985.  It was written in 2009 by Marc Pulupa (pulupa AT ssl.berkeley.edu).
+This IDL code can be used to calculate critical Mach numbers for
+collisionless shocks as described in Kennel et al. 1985. It was
+written in 2009 by Marc Pulupa (pulupa AT ssl.berkeley.edu).
 
-This code is free for anyone to use or improve upon.  It should work simply by placing the relevant files in your IDL path.  If you use this code to calculate critical Mach numbers for publications, please cite the original papers by Kennel et al. or Edmiston and Kennel.  However, I would be grateful if you let me know that you found this code useful.
+This code is free for anyone to use or improve upon. It should work
+simply by placing the relevant files in your IDL path. If you use this
+code to calculate critical Mach numbers for publications, please cite
+the original papers by Kennel et al. or Edmiston and Kennel. However,
+I would be grateful if you let me know that you found this code
+useful.
 
 
 Included files:
 ---------------
 
-crit_mf.pro - solves the Rankine-Hugoniot equations for various types of critical Mach numbers.  Outputs the critical value.
+crit_mf.pro - solves the Rankine-Hugoniot equations for various types
+of critical Mach numbers. Outputs the critical value.
 
-crit_mf_plot.pro - makes contour or surface plots of the critical Mach number as a function of theta_bn and beta.
+crit_mf_plot.pro - makes contour or surface plots of the critical Mach
+number as a function of theta_bn and beta.
 
-crit_mf_fig.crib - example file showing how to use crit_mf_plot to replicate the plots in Kennel et al. 1985 and Edmiston and Kennel 1984.
+crit_mf_fig.crib - example file showing how to use crit_mf_plot to
+replicate the plots in Kennel et al. 1985 and Edmiston and Kennel
+1984.
 
-critmach.pdf - gives a little background and explains the algebra behind solving for the critical Mach number.
+critmach.pdf - gives a little background and explains the algebra
+behind solving for the critical Mach number.
 
-genarr.pro - IDL utility to generate evenly spaced 1D or 2D arrays of numbers.
+genarr.pro - IDL utility to generate evenly spaced 1D or 2D arrays of
+numbers.
 
 README.text - this file.
 
@@ -29,15 +42,20 @@ The plotting program uses TeXtoIDL code, available from:
 
 http://physics.mnstate.edu/mcraig/textoidl/
 
-The solver uses the ZBRENT procedure, which is part of the IDLASTRO code:
+The solver uses the ZBRENT procedure, which is part of the IDLASTRO
+code:
 
 http://idlastro.gsfc.nasa.gov/
 
-The commands in crit_mf_fig.crib to open and close plots are available as part of TDAS:
+The commands in crit_mf_fig.crib to open and close plots are available
+as part of TDAS:
 
 http://themis.ssl.berkeley.edu/software.shtml
 
-If I have missed anything on this list (and if you get any errors when trying to run the code, this is the most likely explanation) then send me an email with the error message from IDL and I will gladly try to help.
+If I have missed anything on this list (and if you get any errors when
+trying to run the code, this is the most likely explanation) then send
+me an email with the error message from IDL and I will gladly try to
+help.
 
 
 - Marc Pulupa, June 2012
