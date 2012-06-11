@@ -1,0 +1,140 @@
+; CRIT_MF_FIG.CRIB
+
+; Edmiston & Kennel (1984) figures
+
+; Figure 2
+
+popen, '../figures/ek_f02a', /encapsulated, xsize = 6., ysize = 4., font = 0
+crit_mf_plot, gamma = 1.1, /surf
+pclose
+
+popen, '../figures/ek_f02b', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, gamma = 1.1
+pclose
+
+popen, '../figures/ek_f02c', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, gamma = 1.1, b_max = 1.
+pclose
+
+; Figure 3
+
+popen, '../figures/ek_f03a', /encapsulated, xsize = 6., ysize = 4., font = 0
+crit_mf_plot, gamma = 4./3, /surf
+pclose
+
+popen, '../figures/ek_f03b', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, gamma = 4./3
+pclose
+
+popen, '../figures/ek_f03c', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, gamma = 4./3, b_max = 1.
+pclose
+
+; Figure 4
+
+popen, '../figures/ek_f04a', /encapsulated, xsize = 6., ysize = 4., font = 0
+crit_mf_plot, gamma = 5./3, /surf
+pclose
+
+popen, '../figures/ek_f04b', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, gamma = 5./3
+pclose
+
+popen, '../figures/ek_f04c', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, gamma = 5./3, b_max = 1.
+pclose
+
+; Figure 5
+
+popen, '../figures/ek_f05a', /encapsulated, xsize = 6., ysize = 4., font = 0
+crit_mf_plot, gamma = 6./3, /surf
+pclose
+
+popen, '../figures/ek_f05b', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, gamma = 6./3
+pclose
+
+popen, '../figures/ek_f05c', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, gamma = 6./3, b_max = 1.
+pclose
+
+; Figure 6
+
+popen, '../figures/ek_f06a', /encapsulated, xsize = 6., ysize = 4.
+crit_mf_plot, beta = 0.0, ngamma=50, g_min=1.01, g_max=2., /surf
+pclose
+
+popen, '../figures/ek_f06b', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, beta = 0.0, ngamma=50, g_min=4./3, g_max=2.
+pclose
+
+; Figure 7
+
+popen, '../figures/ek_f07a', /encapsulated, xsize = 6., ysize = 4.
+crit_mf_plot, beta = 0.5, ngamma=50, g_min=1.01, g_max=2., /surf
+pclose
+
+popen, '../figures/ek_f07b', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, beta = 0.5, ngamma=50, g_min=4./3, g_max=2.
+pclose
+
+; Figure 8
+
+popen, '../figures/ek_f08a', /encapsulated, xsize = 6., ysize = 4.
+crit_mf_plot, beta = 1.0, ngamma=50, g_min=1.01, g_max=2., /surf
+pclose
+
+popen, '../figures/ek_f08b', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, beta = 1.0, ngamma=50, g_min=4./3, g_max=2.
+pclose
+
+; Figure 9
+
+popen, '../figures/ek_f09a', /encapsulated, xsize = 6., ysize = 4.
+crit_mf_plot, beta = 2.0, ngamma=50, g_min=1.01, g_max=2., /surf
+pclose
+
+popen, '../figures/ek_f09b', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, beta = 2.0, ngamma=50, g_min=4./3, g_max=2.
+pclose
+
+; Figure 10
+
+popen, '../figures/ek_f10a', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, gamma = 5./3, /b_rat
+pclose
+
+popen, '../figures/ek_f10b', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, gamma = 5./3, /n_rat
+pclose
+
+; Kennel, Edmiston, and Hada review paper
+
+; Figure 9b:
+
+popen, '../figures/keh_f09b', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, type = 'WB', b_max = 4.0
+pclose
+
+; Figure 13b,c,d:
+
+popen, '../figures/keh_f13b', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, gamma = 5./3, type = '2G', b_max = 3.0, teti2 = 0.5
+pclose
+
+popen, '../figures/keh_f13c', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, gamma = 5./3, type = '2G', b_max = 3.0, teti2 = 1.0
+pclose
+
+popen, '../figures/keh_f13d', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, gamma = 5./3, type = '2G', b_max = 3.0, teti2 = 3.0
+pclose
+
+; Figure 14b: Foreshock critical Mach number
+
+popen, '../figures/keh_f14b', /encapsulated, xsize = 4., ysize = 4.
+crit_mf_plot, gamma = 5./3, type = 'FG', b_max=2.0, $
+              nxtheta=50, tx_min=40./!RADEG, tx_max = 50./!RADEG, teti2=1.0
+pclose
+
+   
